@@ -15,10 +15,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Magento 2.3/2.4
-* PHP 7.3/7.4
-* RabbitMQ 3.8.*
-* Apply [our patches](https://github.com/lizardmedia/magento2-mq-patches) for Magento Message Queue features.
+* Magento 2.4.7+ (tested against 2.4.8)
+* PHP 8.1/8.2/8.3
+* RabbitMQ 3.8+ (tested against 4.1)
+* No patches required. [bartoszkubicki/magento2-mq-patches](https://github.com/bartoszkubicki/magento2-mq-patches) previously listed here is now archived — the Magento Message Queue bugs it addressed were fixed upstream in Magento core (see that repo's README for details on which core version fixed each one).
 
 ### Installing
 
@@ -29,7 +29,7 @@ These instructions will get you a copy of the project up and running on your loc
 Simply run
 
 ```
-composer require lizardmedia/module-message-queue
+composer require bartoszkubicki/message-queue
 ```
 
 ##### Downloading ZIP
@@ -60,13 +60,13 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/lizardmedia/message-queue/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/bartoszkubicki/message-queue/tags). 
 
 ## Authors
 
-* **Bartosz Kubicki** - *Initial work, fixes & maintenance* - [Lizard Media](https://github.com/bartoszkubicki)
+* **Bartosz Kubicki** - *Initial work, fixes & maintenance* - [bartoszkubicki](https://github.com/bartoszkubicki)
 
-See also the list of [contributors](https://github.com/lizardmedia/message-queue/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/bartoszkubicki/message-queue/contributors) who participated in this project.
 
 ## License
 
