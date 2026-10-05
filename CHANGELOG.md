@@ -1,4 +1,7 @@
 ### Unreleased ###
+* removed the `lm:queue:consumers:poison` console command (`Console/Command/PutPoisonPillCommand.php`) - it was
+functionally identical to Magento core's `queue:consumers:restart` (both just call `PoisonPillPutInterface::put()`),
+which has shipped in Magento core since 2.4.2/2.4.3
 * composer package renamed to `bartoszkubicki/message-queue`; PHP namespace renamed to `BartoszKubicki\MessageQueue`
 and module name renamed to `BartoszKubicki_MessageQueue`, removing all references to the module's former owner
 * widened `php` constraint to `~8.1.0||~8.2.0||~8.3.0` for PHP 8.1-8.3 / Magento Open Source 2.4.7 compatibility

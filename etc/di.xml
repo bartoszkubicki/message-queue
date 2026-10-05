@@ -12,14 +12,4 @@
     <preference for="BartoszKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface"
                 type="BartoszKubicki\MessageQueue\Envelope\RetryLimitOverflowResolver"/>
     <!-- API section -->
-
-    <!-- Console command section -->
-    <type name="Magento\Framework\Console\CommandListInterface">
-        <arguments>
-            <argument name="commands" xsi:type="array">
-                <item name="lm:queue:consumers:poison" xsi:type="object">BartoszKubicki\MessageQueue\Console\Command\PutPoisonPillCommand</item>
-            </argument>
-        </arguments>
-    </type>
-    <!-- End of console command section -->
 </config>

@@ -52,7 +52,7 @@ bin/magento setup:upgrade
 
 ## Usage
 
-To make poison pill stop your consumers you have to run them with param `--max-messages`.
+To make poison pill stop your consumers you have to run them with param `--max-messages`. Trigger a poison pill with Magento core's own `bin/magento queue:consumers:restart` — this module used to ship its own `lm:queue:consumers:poison` command for this, but it was functionally identical to Magento's command (both just call `PoisonPillPutInterface::put()`), which has been part of core since Magento 2.4.2/2.4.3, so the duplicate was removed.
 
 ## Contributing
 
