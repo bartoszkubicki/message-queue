@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
+namespace BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
 
 use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\Exception\LocalizedException;
@@ -19,7 +19,7 @@ use Magento\Framework\MessageQueue\MessageEncoder;
 
 /**
  * Trait CommonFunctions
- * @package BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
+ * @package BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
  */
 trait CommonFunctions
 {

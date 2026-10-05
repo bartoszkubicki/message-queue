@@ -7,9 +7,9 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <!-- API section -->
-    <preference for="BartoszKubicki\MessageQueue\Api\Queue\Consumer\EnvelopeCallbackFactoryInterface"
-                type="BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallbackFactory"/>
-    <preference for="BartoszKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface"
-                type="BartoszKubicki\MessageQueue\Envelope\RetryLimitOverflowResolver"/>
+    <preference for="BKubicki\MessageQueue\Api\Queue\Consumer\EnvelopeCallbackFactoryInterface"
+                type="BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallbackFactory"/>
+    <preference for="BKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface"
+                type="BKubicki\MessageQueue\Envelope\RetryLimitOverflowResolver"/>
     <!-- API section -->
 </config>

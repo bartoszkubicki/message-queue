@@ -8,18 +8,18 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Queue\Consumer;
+namespace BKubicki\MessageQueue\Queue\Consumer;
 
 use InvalidArgumentException;
-use BartoszKubicki\MessageQueue\Api\Queue\Consumer\EnvelopeCallbackFactoryInterface;
-use BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface;
+use BKubicki\MessageQueue\Api\Queue\Consumer\EnvelopeCallbackFactoryInterface;
+use BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface;
 use Magento\Framework\MessageQueue\ConsumerConfigurationInterface as UsedConsumerConfig;
 use Magento\Framework\MessageQueue\QueueInterface;
 use Magento\Framework\ObjectManagerInterface;
 
 /**
  * Class EnvelopeCallbackFactory
- * @package BartoszKubicki\MessageQueue\Queue\Consumer
+ * @package BKubicki\MessageQueue\Queue\Consumer
  */
 class EnvelopeCallbackFactory implements EnvelopeCallbackFactoryInterface
 {

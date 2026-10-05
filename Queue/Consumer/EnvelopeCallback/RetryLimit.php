@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
+namespace BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
 
 use Exception;
-use BartoszKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface;
+use BKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface;
 use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\Exception\NotFoundException;
 use Magento\Framework\MessageQueue\ConnectionLostException;
@@ -25,7 +25,7 @@ use Psr\Log\LoggerInterface;
 
 /**
  * Class RetryLimit
- * @package BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
+ * @package BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
  * @codeCoverageIgnore
  * @SuppressWarnings(PHPMD.LongVariable)
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)

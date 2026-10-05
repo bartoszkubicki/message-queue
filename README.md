@@ -6,7 +6,7 @@ A module extending functionalities from `magento/framework-message-queue` compon
 
 * custom implementation of `Magento\Framework\MessageQueue\ConsumerInterface` making possible injection of envelope callback,
 which allows to introduce custom message consumption easily without copy-paste of whole class
-* a few implementations of `BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
+* a few implementations of `BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
 message in its specific way, including `x-death` parameters support 
 
 ## Getting Started
@@ -29,14 +29,14 @@ These instructions will get you a copy of the project up and running on your loc
 Simply run
 
 ```
-composer require bartoszkubicki/message-queue
+composer require bkubicki/message-queue
 ```
 
 ##### Downloading ZIP
 
 Download a ZIP version of the module and unpack it into your project into
 ```
-app/code/BartoszKubicki/MessageQueue
+app/code/BKubicki/MessageQueue
 ```
 If you use ZIP file you will need to install all dependencies of the module
 manually
@@ -46,7 +46,7 @@ manually
 
 Run this command
 ```
-bin/magento module:enable BartoszKubicki_MessageQueue
+bin/magento module:enable BKubicki_MessageQueue
 bin/magento setup:upgrade
 ```
 

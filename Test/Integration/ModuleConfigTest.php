@@ -7,7 +7,7 @@ declare(strict_types=1);
  *
  * @author Bartosz Kubicki
  */
-namespace BartoszKubicki\MessageQueue\Test\Integration;
+namespace BKubicki\MessageQueue\Test\Integration;
 
 use Magento\Framework\Component\ComponentRegistrar;
 use Magento\Framework\Module\ModuleList;
@@ -16,14 +16,14 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class ModuleConfigTest
- * @package BartoszKubicki\MessageQueue\Test\Integration
+ * @package BKubicki\MessageQueue\Test\Integration
  */
 class ModuleConfigTest extends TestCase
 {
     /**
      * @var string
      */
-    private const MODULE_NAME = 'BartoszKubicki_MessageQueue';
+    private const MODULE_NAME = 'BKubicki_MessageQueue';
 
     /**
      * @return void

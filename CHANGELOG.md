@@ -2,8 +2,8 @@
 * removed the `lm:queue:consumers:poison` console command (`Console/Command/PutPoisonPillCommand.php`) - it was
 functionally identical to Magento core's `queue:consumers:restart` (both just call `PoisonPillPutInterface::put()`),
 which has shipped in Magento core since 2.4.2/2.4.3
-* composer package renamed to `bartoszkubicki/message-queue`; PHP namespace renamed to `BartoszKubicki\MessageQueue`
-and module name renamed to `BartoszKubicki_MessageQueue`, removing all references to the module's former owner
+* composer package renamed to `bkubicki/message-queue`; PHP namespace renamed to `BKubicki\MessageQueue`
+and module name renamed to `BKubicki_MessageQueue`, removing all references to the module's former owner
 * widened `php` constraint to `~8.1.0||~8.2.0||~8.3.0` for PHP 8.1-8.3 / Magento Open Source 2.4.7 compatibility
 * added explicit `php-amqplib/php-amqplib` (`~3.2.0`) requirement, matching the version shipped with
 `magento/framework-amqp` 100.4.x on Magento 2.4.7; verified `PhpAmqpLib\Wire\AMQPTable::set()`/`getNativeData()`
@@ -18,5 +18,5 @@ properties throughout
 ### 1.0.0 ###
 * custom implementation of `Magento\Framework\MessageQueue\ConsumerInterface` making possible injection of envelope callback,
 which allows to introduce custom message consumption easily without copy-paste of whole class
-* a few implementations of `BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
+* a few implementations of `BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
 message in its specific way, including `x-death` parameters support

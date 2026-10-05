@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Test\Unit\Stub\Queue\Consumer;
+namespace BKubicki\MessageQueue\Test\Unit\Stub\Queue\Consumer;
 
-use BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface;
+use BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface;
 use Magento\Framework\MessageQueue\EnvelopeInterface;
 
 /**
  * Class EnvelopeCallbackStub
- * @package BartoszKubicki\MessageQueue\Test\Unit\Stub\Queue\Consumer
+ * @package BKubicki\MessageQueue\Test\Unit\Stub\Queue\Consumer
  */
 class EnvelopeCallbackStub implements EnvelopeCallbackInterface
 {

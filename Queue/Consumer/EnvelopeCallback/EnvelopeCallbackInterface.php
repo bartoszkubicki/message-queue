@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
+namespace BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
 
 use Magento\Framework\MessageQueue\EnvelopeInterface;
 
 /**
  * Interface EnvelopeCallbackInterface
- * @package BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
+ * @package BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
  */
 interface EnvelopeCallbackInterface
 {

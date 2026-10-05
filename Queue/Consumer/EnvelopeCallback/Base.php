@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
+namespace BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
 
 use Exception;
 use Magento\Framework\App\ResourceConnection;
@@ -24,7 +24,7 @@ use Psr\Log\LoggerInterface;
 
 /**
  * Class Base
- * @package BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
+ * @package BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
  * @codeCoverageIgnore
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

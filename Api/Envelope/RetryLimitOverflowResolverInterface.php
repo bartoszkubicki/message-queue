@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Api\Envelope;
+namespace BKubicki\MessageQueue\Api\Envelope;
 
 use Magento\Framework\MessageQueue\EnvelopeInterface;
 use Magento\Framework\MessageQueue\QueueInterface;
 
 /**
  * Interface RetryLimitOverflowResolverInterface
- * @package BartoszKubicki\MessageQueue\Api\Envelope
+ * @package BKubicki\MessageQueue\Api\Envelope
  */
 interface RetryLimitOverflowResolverInterface
 {

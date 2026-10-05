@@ -8,17 +8,17 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Envelope;
+namespace BKubicki\MessageQueue\Envelope;
 
 use Magento\Framework\MessageQueue\QueueInterface;
 use function array_key_exists;
-use BartoszKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface;
+use BKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface;
 use Magento\Framework\MessageQueue\EnvelopeInterface;
 use PhpAmqpLib\Wire\AMQPTable;
 
 /**
  * Class RetryLimitOverflowResolver
- * @package BartoszKubicki\MessageQueue\Envelope
+ * @package BKubicki\MessageQueue\Envelope
  */
 class RetryLimitOverflowResolver implements RetryLimitOverflowResolverInterface
 {

@@ -1,5 +1,5 @@
 {
-    "name": "bartoszkubicki/message-queue",
+    "name": "bkubicki/message-queue",
     "description": "Module extending message queue component",
     "require": {
         "php": ">=8.1",
@@ -15,7 +15,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "BartoszKubicki\\MessageQueue\\": ""
+            "BKubicki\\MessageQueue\\": ""
         }
     }
 }

@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Queue\Consumer;
+namespace BKubicki\MessageQueue\Queue\Consumer;
 
 use Closure;
-use BartoszKubicki\MessageQueue\Api\Queue\Consumer\EnvelopeCallbackFactoryInterface;
+use BKubicki\MessageQueue\Api\Queue\Consumer\EnvelopeCallbackFactoryInterface;
 use Magento\Framework\MessageQueue\CallbackInvokerInterface;
 use Magento\Framework\MessageQueue\ConsumerConfigurationInterface as UsedConsumerConfig;
 use Magento\Framework\MessageQueue\ConsumerInterface;
@@ -19,7 +19,7 @@ use Magento\Framework\MessageQueue\EnvelopeInterface;
 
 /**
  * Class ConsumerWithInjectableEnvelopeCallback
- * @package BartoszKubicki\MessageQueue\Queue\Consumer
+ * @package BKubicki\MessageQueue\Queue\Consumer
  * @SuppressWarnings(PHPMD.LongVariable)
  * @codeCoverageIgnore
  */

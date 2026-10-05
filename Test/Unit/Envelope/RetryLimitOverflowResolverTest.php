@@ -8,16 +8,16 @@ declare(strict_types=1);
  * @author Bartosz Kubicki
  */
 
-namespace BartoszKubicki\MessageQueue\Test\Unit\Envelope;
+namespace BKubicki\MessageQueue\Test\Unit\Envelope;
 
-use BartoszKubicki\MessageQueue\Envelope\RetryLimitOverflowResolver;
+use BKubicki\MessageQueue\Envelope\RetryLimitOverflowResolver;
 use Magento\Framework\MessageQueue\Envelope;
 use PhpAmqpLib\Wire\AMQPTable;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class RetryLimitOverflowResolverTest
- * @package BartoszKubicki\MessageQueue\Test\Unit\Envelope
+ * @package BKubicki\MessageQueue\Test\Unit\Envelope
  * @SuppressWarnings(PHPMD.LongVariable)
  */
 class RetryLimitOverflowResolverTest extends TestCase
