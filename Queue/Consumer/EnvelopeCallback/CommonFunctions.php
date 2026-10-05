@@ -5,11 +5,10 @@ declare(strict_types=1);
 /**
  * File: CommonFunctions.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback;
+namespace BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
 
 use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\Exception\LocalizedException;
@@ -20,7 +19,7 @@ use Magento\Framework\MessageQueue\MessageEncoder;
 
 /**
  * Trait CommonFunctions
- * @package LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback
+ * @package BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
  */
 trait CommonFunctions
 {

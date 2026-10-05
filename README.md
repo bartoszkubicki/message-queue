@@ -1,4 +1,4 @@
-# Lizard Media MessageQueue #
+# MessageQueue #
 
 A module extending functionalities from `magento/framework-message-queue` component.
 
@@ -6,7 +6,7 @@ A module extending functionalities from `magento/framework-message-queue` compon
 
 * custom implementation of `Magento\Framework\MessageQueue\ConsumerInterface` making possible injection of envelope callback,
 which allows to introduce custom message consumption easily without copy-paste of whole class
-* a few implementations of `LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
+* a few implementations of `BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
 message in its specific way, including `x-death` parameters support 
 
 ## Getting Started
@@ -15,10 +15,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Magento 2.3/2.4
-* PHP 7.3/7.4
-* RabbitMQ 3.8.*
-* Apply [our patches](https://github.com/lizardmedia/magento2-mq-patches) for Magento Message Queue features.
+* Magento 2.4.7+ (tested against 2.4.8)
+* PHP 8.1/8.2/8.3
+* RabbitMQ 3.8+ (tested against 4.1)
+* No patches required. [bartoszkubicki/magento2-mq-patches](https://github.com/bartoszkubicki/magento2-mq-patches) previously listed here is now archived — the Magento Message Queue bugs it addressed were fixed upstream in Magento core (see that repo's README for details on which core version fixed each one).
 
 ### Installing
 
@@ -29,14 +29,14 @@ These instructions will get you a copy of the project up and running on your loc
 Simply run
 
 ```
-composer require lizardmedia/module-message-queue
+composer require bkubicki/message-queue
 ```
 
 ##### Downloading ZIP
 
 Download a ZIP version of the module and unpack it into your project into
 ```
-app/code/LizardMedia/MessageQueue
+app/code/BKubicki/MessageQueue
 ```
 If you use ZIP file you will need to install all dependencies of the module
 manually
@@ -46,13 +46,13 @@ manually
 
 Run this command
 ```
-bin/magento module:enable LizardMedia_MessageQueue
+bin/magento module:enable BKubicki_MessageQueue
 bin/magento setup:upgrade
 ```
 
 ## Usage
 
-To make poison pill stop your consumers you have to run them with param `--max-messages`.
+To make poison pill stop your consumers you have to run them with param `--max-messages`. Trigger a poison pill with Magento core's own `bin/magento queue:consumers:restart` — this module used to ship its own `lm:queue:consumers:poison` command for this, but it was functionally identical to Magento's command (both just call `PoisonPillPutInterface::put()`), which has been part of core since Magento 2.4.2/2.4.3, so the duplicate was removed.
 
 ## Contributing
 
@@ -60,13 +60,13 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/lizardmedia/message-queue/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/bartoszkubicki/message-queue/tags). 
 
 ## Authors
 
-* **Bartosz Kubicki** - *Initial work, fixes & maintenance* - [Lizard Media](https://github.com/bartoszkubicki)
+* **Bartosz Kubicki** - *Initial work, fixes & maintenance* - [bartoszkubicki](https://github.com/bartoszkubicki)
 
-See also the list of [contributors](https://github.com/lizardmedia/message-queue/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/bartoszkubicki/message-queue/contributors) who participated in this project.
 
 ## License
 

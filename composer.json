@@ -1,10 +1,11 @@
 {
-    "name": "lizardmedia/module-message-queue",
+    "name": "bkubicki/message-queue",
     "description": "Module extending message queue component",
     "require": {
-        "php": "~7.3.0||~7.4.0",
+        "php": ">=8.1",
         "magento/framework": "102.0.*||103.0.*",
-        "magento/framework-message-queue": "100.3.*||100.4.*"
+        "magento/framework-message-queue": "100.3.*||100.4.*",
+        "php-amqplib/php-amqplib": "^3.2"
     },
     "type": "magento2-module",
     "version": "1.0.2",
@@ -14,7 +15,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "LizardMedia\\MessageQueue\\": ""
+            "BKubicki\\MessageQueue\\": ""
         }
     }
 }

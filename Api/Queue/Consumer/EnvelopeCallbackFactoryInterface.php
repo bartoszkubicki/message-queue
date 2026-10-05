@@ -5,19 +5,18 @@ declare(strict_types=1);
 /**
  * File: EnvelopeCallbackFactoryInterface.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Api\Queue\Consumer;
+namespace BKubicki\MessageQueue\Api\Queue\Consumer;
 
 use InvalidArgumentException;
-use LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface;
+use BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface;
 use Magento\Framework\MessageQueue\ConsumerConfigurationInterface as UsedConsumerConfig;
 
 /**
  * Interface EnvelopeCallbackFactoryInterface
- * @package LizardMedia\MessageQueue\Api\Queue\Consumer
+ * @package BKubicki\MessageQueue\Api\Queue\Consumer
  */
 interface EnvelopeCallbackFactoryInterface
 {

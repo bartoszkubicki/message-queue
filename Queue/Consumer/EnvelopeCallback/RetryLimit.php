@@ -5,14 +5,13 @@ declare(strict_types=1);
 /**
  * File: RetryLimit.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback;
+namespace BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
 
 use Exception;
-use LizardMedia\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface;
+use BKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface;
 use Magento\Framework\App\ResourceConnection;
 use Magento\Framework\Exception\NotFoundException;
 use Magento\Framework\MessageQueue\ConnectionLostException;
@@ -26,7 +25,7 @@ use Psr\Log\LoggerInterface;
 
 /**
  * Class RetryLimit
- * @package LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback
+ * @package BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
  * @codeCoverageIgnore
  * @SuppressWarnings(PHPMD.LongVariable)
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)

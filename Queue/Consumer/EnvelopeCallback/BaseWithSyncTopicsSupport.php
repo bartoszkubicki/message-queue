@@ -5,11 +5,10 @@ declare(strict_types=1);
 /**
  * File: BaseWithSyncTopicsSupport.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback;
+namespace BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
 
 use Exception;
 use Magento\Framework\App\ResourceConnection;
@@ -31,7 +30,7 @@ use Psr\Log\LoggerInterface;
 
 /**
  * Class BaseWithSyncTopicsSupport
- * @package LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback
+ * @package BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
  * @codeCoverageIgnore
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
