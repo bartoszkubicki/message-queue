@@ -5,18 +5,17 @@ declare(strict_types=1);
 /**
  * File: RetryLimitOverflowResolverInterface.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Api\Envelope;
+namespace BartoszKubicki\MessageQueue\Api\Envelope;
 
 use Magento\Framework\MessageQueue\EnvelopeInterface;
 use Magento\Framework\MessageQueue\QueueInterface;
 
 /**
  * Interface RetryLimitOverflowResolverInterface
- * @package LizardMedia\MessageQueue\Api\Envelope
+ * @package BartoszKubicki\MessageQueue\Api\Envelope
  */
 interface RetryLimitOverflowResolverInterface
 {

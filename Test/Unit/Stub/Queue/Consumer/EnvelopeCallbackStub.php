@@ -5,18 +5,17 @@ declare(strict_types=1);
 /**
  * File: EnvelopeCallbackStub.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Test\Unit\Stub\Queue\Consumer;
+namespace BartoszKubicki\MessageQueue\Test\Unit\Stub\Queue\Consumer;
 
-use LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface;
+use BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface;
 use Magento\Framework\MessageQueue\EnvelopeInterface;
 
 /**
  * Class EnvelopeCallbackStub
- * @package LizardMedia\MessageQueue\Test\Unit\Stub\Queue\Consumer
+ * @package BartoszKubicki\MessageQueue\Test\Unit\Stub\Queue\Consumer
  */
 class EnvelopeCallbackStub implements EnvelopeCallbackInterface
 {

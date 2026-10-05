@@ -5,11 +5,10 @@ declare(strict_types=1);
 /**
  * File: Base.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback;
+namespace BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback;
 
 use Exception;
 use Magento\Framework\App\ResourceConnection;
@@ -25,7 +24,7 @@ use Psr\Log\LoggerInterface;
 
 /**
  * Class Base
- * @package LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback
+ * @package BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback
  * @codeCoverageIgnore
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */

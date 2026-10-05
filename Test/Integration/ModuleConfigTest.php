@@ -5,10 +5,9 @@ declare(strict_types=1);
 /**
  * File: ModuleConfigTest.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2019 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
-namespace LizardMedia\MessageQueue\Test\Integration;
+namespace BartoszKubicki\MessageQueue\Test\Integration;
 
 use Magento\Framework\Component\ComponentRegistrar;
 use Magento\Framework\Module\ModuleList;
@@ -17,14 +16,14 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Class ModuleConfigTest
- * @package LizardMedia\MessageQueue\Test\Integration
+ * @package BartoszKubicki\MessageQueue\Test\Integration
  */
 class ModuleConfigTest extends TestCase
 {
     /**
      * @var string
      */
-    private const MODULE_NAME = 'LizardMedia_MessageQueue';
+    private const MODULE_NAME = 'BartoszKubicki_MessageQueue';
 
     /**
      * @return void

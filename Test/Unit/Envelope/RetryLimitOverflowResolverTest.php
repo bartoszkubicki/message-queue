@@ -5,20 +5,19 @@ declare(strict_types=1);
 /**
  * File: RetryLimitOverflowResolverTest.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Test\Unit\Envelope;
+namespace BartoszKubicki\MessageQueue\Test\Unit\Envelope;
 
-use LizardMedia\MessageQueue\Envelope\RetryLimitOverflowResolver;
+use BartoszKubicki\MessageQueue\Envelope\RetryLimitOverflowResolver;
 use Magento\Framework\MessageQueue\Envelope;
 use PhpAmqpLib\Wire\AMQPTable;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class RetryLimitOverflowResolverTest
- * @package LizardMedia\MessageQueue\Test\Unit\Envelope
+ * @package BartoszKubicki\MessageQueue\Test\Unit\Envelope
  * @SuppressWarnings(PHPMD.LongVariable)
  */
 class RetryLimitOverflowResolverTest extends TestCase

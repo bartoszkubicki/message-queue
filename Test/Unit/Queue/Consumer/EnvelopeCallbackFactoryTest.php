@@ -5,15 +5,14 @@ declare(strict_types=1);
 /**
  * File: EnvelopeCallbackFactoryTest.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Test\Unit\Queue\Consumer;
+namespace BartoszKubicki\MessageQueue\Test\Unit\Queue\Consumer;
 
 use InvalidArgumentException;
-use LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallbackFactory;
-use LizardMedia\MessageQueue\Test\Unit\Stub\Queue\Consumer\EnvelopeCallbackStub;
+use BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallbackFactory;
+use BartoszKubicki\MessageQueue\Test\Unit\Stub\Queue\Consumer\EnvelopeCallbackStub;
 use Magento\Framework\App\ObjectManager;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -21,7 +20,7 @@ use Magento\Framework\MessageQueue\ConsumerConfigurationInterface as UsedConsume
 
 /**
  * Class EnvelopeCallbackFactoryTest
- * @package LizardMedia\MessageQueue\Test\Unit\Queue\Consumer
+ * @package BartoszKubicki\MessageQueue\Test\Unit\Queue\Consumer
  * @SuppressWarnings(PHPMD.LongVariable)
  */
 class EnvelopeCallbackFactoryTest extends TestCase

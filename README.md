@@ -1,4 +1,4 @@
-# Lizard Media MessageQueue #
+# MessageQueue #
 
 A module extending functionalities from `magento/framework-message-queue` component.
 
@@ -6,7 +6,7 @@ A module extending functionalities from `magento/framework-message-queue` compon
 
 * custom implementation of `Magento\Framework\MessageQueue\ConsumerInterface` making possible injection of envelope callback,
 which allows to introduce custom message consumption easily without copy-paste of whole class
-* a few implementations of `LizardMedia\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
+* a few implementations of `BartoszKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
 message in its specific way, including `x-death` parameters support 
 
 ## Getting Started
@@ -36,7 +36,7 @@ composer require bartoszkubicki/message-queue
 
 Download a ZIP version of the module and unpack it into your project into
 ```
-app/code/LizardMedia/MessageQueue
+app/code/BartoszKubicki/MessageQueue
 ```
 If you use ZIP file you will need to install all dependencies of the module
 manually
@@ -46,7 +46,7 @@ manually
 
 Run this command
 ```
-bin/magento module:enable LizardMedia_MessageQueue
+bin/magento module:enable BartoszKubicki_MessageQueue
 bin/magento setup:upgrade
 ```
 

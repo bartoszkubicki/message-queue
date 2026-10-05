@@ -5,21 +5,20 @@ declare(strict_types=1);
 /**
  * File: RetryLimitOverflowResolver.php
  *
- * @author Bartosz Kubicki bartosz.kubicki@lizardmedia.pl>
- * @copyright Copyright (C) 2020 Lizard Media (http://lizardmedia.pl)
+ * @author Bartosz Kubicki
  */
 
-namespace LizardMedia\MessageQueue\Envelope;
+namespace BartoszKubicki\MessageQueue\Envelope;
 
 use Magento\Framework\MessageQueue\QueueInterface;
 use function array_key_exists;
-use LizardMedia\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface;
+use BartoszKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface;
 use Magento\Framework\MessageQueue\EnvelopeInterface;
 use PhpAmqpLib\Wire\AMQPTable;
 
 /**
  * Class RetryLimitOverflowResolver
- * @package LizardMedia\MessageQueue\Envelope
+ * @package BartoszKubicki\MessageQueue\Envelope
  */
 class RetryLimitOverflowResolver implements RetryLimitOverflowResolverInterface
 {
