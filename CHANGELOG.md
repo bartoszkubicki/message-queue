@@ -1,4 +1,7 @@
 ### Unreleased ###
+* queue-only arguments (`x-dead-letter-exchange`, `x-message-ttl`, ...) are no longer sent with `queue_bind`; since
+magento/magento2#26966 binding arguments were applied to both the queue and the binding. Done by a before plugin on the
+core queue binding installer, the list of filtered keys is configurable via `queueArgumentKeys` in `di.xml`
 * removed the `lm:queue:consumers:poison` console command (`Console/Command/PutPoisonPillCommand.php`) - it was
 functionally identical to Magento core's `queue:consumers:restart` (both just call `PoisonPillPutInterface::put()`),
 which has shipped in Magento core since 2.4.2/2.4.3
