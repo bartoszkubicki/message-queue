@@ -71,3 +71,25 @@ See also the list of [contributors](https://github.com/bartoszkubicki/message-qu
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Explicit queue declaration
+
+Core creates queues only as a side effect of `queue_topology.xml` bindings and takes the queue arguments from the
+binding, so the very same arguments end up on the queue and on the binding. This module stops that: queues derived from
+bindings are created **without arguments**, and arguments are defined on queues declared in `etc/queue_declaration.xml`:
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:BKubicki_MessageQueue:etc/queue_declaration.xsd">
+    <queue name="create_entity" connection="amqp" durable="true" autoDelete="false">
+        <arguments>
+            <argument name="x-dead-letter-exchange" xsi:type="string">entity.dead_letter</argument>
+        </arguments>
+    </queue>
+</config>
+```
+
+* files from all modules are merged by queue `name` + `connection`
+* binding `<arguments>` are passed to the binding only, never to the queue
+* a queue without declaration is still created from its binding, just without arguments
+* a declared queue without any binding is created as well

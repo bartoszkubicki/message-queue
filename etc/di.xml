@@ -14,31 +14,9 @@
     <!-- API section -->
 
     <!-- Plugins section -->
-    <type name="Magento\Framework\Amqp\Topology\BindingInstallerType\Queue">
-        <plugin name="BKubicki_MessageQueue::FilterQueueArgumentsFromBinding"
-                type="BKubicki\MessageQueue\Plugin\Amqp\FilterQueueArgumentsFromBinding" sortOrder="10"/>
-    </type>
-    <type name="BKubicki\MessageQueue\Plugin\Amqp\FilterQueueArgumentsFromBinding">
-        <arguments>
-            <argument name="queueArgumentKeys" xsi:type="array">
-                <item name="x-dead-letter-exchange" xsi:type="string">x-dead-letter-exchange</item>
-                <item name="x-dead-letter-routing-key" xsi:type="string">x-dead-letter-routing-key</item>
-                <item name="x-dead-letter-strategy" xsi:type="string">x-dead-letter-strategy</item>
-                <item name="x-message-ttl" xsi:type="string">x-message-ttl</item>
-                <item name="x-expires" xsi:type="string">x-expires</item>
-                <item name="x-max-length" xsi:type="string">x-max-length</item>
-                <item name="x-max-length-bytes" xsi:type="string">x-max-length-bytes</item>
-                <item name="x-overflow" xsi:type="string">x-overflow</item>
-                <item name="x-max-priority" xsi:type="string">x-max-priority</item>
-                <item name="x-queue-type" xsi:type="string">x-queue-type</item>
-                <item name="x-queue-mode" xsi:type="string">x-queue-mode</item>
-                <item name="x-single-active-consumer" xsi:type="string">x-single-active-consumer</item>
-                <item name="x-delivery-limit" xsi:type="string">x-delivery-limit</item>
-                <item name="x-quorum-initial-group-size" xsi:type="string">x-quorum-initial-group-size</item>
-                <item name="x-max-in-memory-length" xsi:type="string">x-max-in-memory-length</item>
-                <item name="x-max-in-memory-bytes" xsi:type="string">x-max-in-memory-bytes</item>
-            </argument>
-        </arguments>
+    <type name="Magento\Framework\MessageQueue\Topology\Config\QueueConfigItem\DataMapper">
+        <plugin name="BKubicki_MessageQueue::AddDeclaredQueuesToTopology"
+                type="BKubicki\MessageQueue\Plugin\Amqp\AddDeclaredQueuesToTopology"/>
     </type>
     <!-- End of plugins section -->
 </config>
