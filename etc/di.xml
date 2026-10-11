@@ -12,11 +12,4 @@
     <preference for="BKubicki\MessageQueue\Api\Envelope\RetryLimitOverflowResolverInterface"
                 type="BKubicki\MessageQueue\Envelope\RetryLimitOverflowResolver"/>
     <!-- API section -->
-
-    <!-- Plugins section -->
-    <type name="Magento\Framework\MessageQueue\Topology\Config\QueueConfigItem\DataMapper">
-        <plugin name="BKubicki_MessageQueue::AddDeclaredQueuesToTopology"
-                type="BKubicki\MessageQueue\Plugin\Amqp\AddDeclaredQueuesToTopology"/>
-    </type>
-    <!-- End of plugins section -->
 </config>

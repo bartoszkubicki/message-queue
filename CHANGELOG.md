@@ -1,12 +1,9 @@
 ### Unreleased ###
-* queues no longer get arguments from bindings. Core takes queue arguments from `<binding><arguments>` since
-magento/magento2#26966, so they end up on both the queue and the binding; now queues derived from bindings (including RPC
-response queues) are created without arguments and binding arguments are passed to the binding only. **Breaking** for
-topologies relying on binding arguments as queue arguments (`x-dead-letter-exchange`, `x-message-ttl`, ...): move them
-to `queue_declaration.xml`
-* added `queue_declaration.xml` (schema `urn:magento:module:BKubicki_MessageQueue:etc/queue_declaration.xsd`) which declares
-queues explicitly with their own `durable`, `autoDelete` and `<arguments>`; files of all modules are merged. Declared
-queues take precedence over, and are created in addition to, the ones derived from bindings
+* the explicit `queue_declaration.xml` mechanism (queues no longer inheriting arguments from bindings) has been
+extracted into its own package, [bkubicki/declarative-queue](https://github.com/bartoszkubicki/declarative-queue),
+and is now pulled in as a composer dependency instead of being implemented in this module directly. Behaviour is
+unchanged for anyone already depending on this module; see that package's README/CHANGELOG for its own history,
+including the **breaking** change (magento/magento2#26966) that motivated it
 * removed the `lm:queue:consumers:poison` console command (`Console/Command/PutPoisonPillCommand.php`) - it was
 functionally identical to Magento core's `queue:consumers:restart` (both just call `PoisonPillPutInterface::put()`),
 which has shipped in Magento core since 2.4.2/2.4.3
