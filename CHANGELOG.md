@@ -1,4 +1,9 @@
 ### Unreleased ###
+* the explicit `queue_declaration.xml` mechanism (queues no longer inheriting arguments from bindings) has been
+extracted into its own package, [bkubicki/declarative-queue](https://github.com/bartoszkubicki/declarative-queue),
+and is now pulled in as a composer dependency instead of being implemented in this module directly. Behaviour is
+unchanged for anyone already depending on this module; see that package's README/CHANGELOG for its own history,
+including the **breaking** change (magento/magento2#26966) that motivated it
 * removed the `lm:queue:consumers:poison` console command (`Console/Command/PutPoisonPillCommand.php`) - it was
 functionally identical to Magento core's `queue:consumers:restart` (both just call `PoisonPillPutInterface::put()`),
 which has shipped in Magento core since 2.4.2/2.4.3

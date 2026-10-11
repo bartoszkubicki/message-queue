@@ -7,7 +7,10 @@ A module extending functionalities from `magento/framework-message-queue` compon
 * custom implementation of `Magento\Framework\MessageQueue\ConsumerInterface` making possible injection of envelope callback,
 which allows to introduce custom message consumption easily without copy-paste of whole class
 * a few implementations of `BKubicki\MessageQueue\Queue\Consumer\EnvelopeCallback\EnvelopeCallbackInterface`, each handling
-message in its specific way, including `x-death` parameters support 
+message in its specific way, including `x-death` parameters support
+* pulls in [bkubicki/declarative-queue](https://github.com/bartoszkubicki/declarative-queue), which makes queue
+`durable`/`autoDelete`/`<arguments>` declarable explicitly instead of leaking them in from binding arguments (see
+that repo's README for details)
 
 ## Getting Started
 
